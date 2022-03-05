@@ -214,17 +214,16 @@
 <link rel="stylesheet" href="https://sun-szy.github.io/CSS-JS/markdown_plugin_assets/mermaid/mermaid.min.js" />
 <style>
     .father {
-        max-width: 90%;
         height: auto;
-        margin: 2% 1% 1% 5%;
+        margin: 2% 1% 1% 1%;
         /* background-color: #222; */
         padding-left: 1.3%;
-        padding: 20px 20px 20px 20px;
+        padding: 1% 1% 1% 1%;
+        overflow: hidden
     }
     
     .element {
         width: 100%;
-        margin: -60% 0% 0% -10%;
         /* background-color: #eee; */
         height: auto;
         /* padding-bottom: 100%;
@@ -235,6 +234,11 @@
         text-align: justify;
         text-justify: newspaper;
         word-break: break-all;
+        /*这个参数根据需求来决定要不要*/
+    }
+    
+    .katex-html {
+        max-width: 50%;
     }
     
     .mou {
@@ -245,6 +249,16 @@
         padding-bottom: inherit;
         padding-top: 0;
         margin-bottom: inherit;
+    }
+    
+    .element img {
+        min-height: auto;
+        min-width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: 100%;
     }
 </style>
 
